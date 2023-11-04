@@ -31,6 +31,11 @@ body {
     margin: 0 100px;
 }
 
+.container__main {
+    margin: 0 200px;
+
+}
+
 /* Header */
 .header {
     background-color: var(--primary);
