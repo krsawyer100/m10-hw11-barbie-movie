@@ -36,9 +36,6 @@ body {
     justify-content:center ;
 }
 
-
-
-
 /* Header */
 .header {
     background-color: var(--primary);
@@ -205,3 +202,5 @@ p{
         margin: 10px 30px;
     }
 }
+
+
