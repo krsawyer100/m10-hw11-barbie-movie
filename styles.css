@@ -41,6 +41,8 @@ body {
 
 .container__main {
     margin: 0 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .left {
@@ -49,7 +51,6 @@ body {
 
 .right {
     width: 25%;
-    float: right;
 }
 
 /* Header */
@@ -157,6 +158,11 @@ li {
     padding: 3px;
 }
 
+.article__intro_img-photo {
+    width: 100%;
+    height: auto;
+}
+
 .article__characters_card {
     max-width: 350px;
     padding: 5px;
@@ -188,7 +194,6 @@ li {
     font-weight: 400;
     font-size: 1.16em;
     padding: 20px;
-    width: 100%;
 }
 
 /* Media Queries */
