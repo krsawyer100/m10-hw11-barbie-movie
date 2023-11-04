@@ -1,0 +1,150 @@
+:root {
+    --primary: #d6248c;
+    --text: #000000;
+    --text-light: #474747;
+    --secondary: #0b7dae;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: ‘Poppins’, sans-serif;
+    font-size: 12px;
+    background-color: var(--white);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 100px;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary);
+}
+
+.header__nav {
+    padding: 10px;
+    height: 50px;
+}
+
+.header__nav_logo {
+    margin-right: auto;
+}
+
+.header__nav_link {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.33em;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header__nav_link:hover, .header__nav_link:focus {
+    font-weight: 400;
+    font-size: 1.25em;
+    text-decoration: underline solid 2px var(--white);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.16em;
+    padding: 20px;
+}
+
+/* Media Queries*/
+@media screen and (max-width: 1020px) {
+    .container {
+        margin: 5px 20px 0;
+    }
+
+    .header__img {
+        display: none;
+    } 
+
+    .header__nav {
+        display: block;
+        height: auto;
+    }
+
+    .header__nav_logo {
+        margin-right: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-bottom: dotted 5px var(--white);
+        border-top: dotted 5px var(--white);
+    }
+
+    .header__nav_logo > img {
+        width: 100px;
+        height: auto;
+    }
+
+    .header__nav_links {
+        padding: 20px 0 10px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__nav_link {
+        font-size: 1.16em;
+        padding: 5px;
+    }
+
+    .header__nav_link:hover, .header__nav_link:focus  {
+        font-weight: 400;
+        font-size: 1.083em;
+        text-decoration: underline solid 2px var(--white);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header__nav_logo > img {
+        width: 75px;
+        height: auto;
+    }
+    
+    .header__nav_links {
+        padding: 10px 50px 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 24px;
+    color:#d6248c;
+    text-align: center;
+
+}
+
+h2 {
+
+    font-weight: 700;
+    font-size: 22 px;
+    color:#0b7dae;
+}
+
