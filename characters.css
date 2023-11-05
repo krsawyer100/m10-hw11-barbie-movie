@@ -6,7 +6,6 @@
     --white: #ffffff;
 }
 
-
 body {
     margin: 0;
     border: 0;
@@ -49,14 +48,14 @@ body {
 .header__nav_link {
     color: var(--white);
     font-weight: 500;
-    font-size: 1.33em;
+    font-size: 14px;
     text-decoration: none;
     padding: 10px;
 }
 
 .header__nav_link:hover, .header__nav_link:focus {
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 20px;
     text-decoration: underline solid 2px var(--white);
 }
 
@@ -81,6 +80,7 @@ body {
     display: flex;
 }
 
+/* Main */
 .main__h1 {
     color: var(--primary);
     font-size: 24px;
@@ -99,7 +99,7 @@ h2 {
 
 .main__p {
     color: var(--text);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1.5px solid var(--primary);
@@ -116,6 +116,29 @@ h2 {
     margin-bottom: 6px;
 }
 
+.headshot__caption {
+    font-weight: 300;
+    font-size: 1em;
+    color: var(--text-light);
+    margin-top: 3px;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.main__references_link {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10 0;
+    margin: 0 10px 10px 0;
+    color: var(--secondary);
+}
+
+.main__references_link:hover {
+    color: var(--primary);
+    font-size: 1.15em;
+    transition: all 0.5s;
+}
 
 
 /* Media Queries*/
@@ -166,7 +189,6 @@ h2 {
 }
 
 
-
 @media screen and (max-width: 420px) {
     .header__nav_logo > img {
         width: 75px;
@@ -197,7 +219,7 @@ h2 {
         border: 0;
         color: var(--text);
         font-family: ‘Poppins’, sans-serif;
-        font-size: 12px;
+        font-size: 21px;
         background-color: var(--white);
         padding: 2px;
         display: flex;
