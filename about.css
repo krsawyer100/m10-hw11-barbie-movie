@@ -66,8 +66,8 @@ body {
     font-weight: 400;
     font-size: 1.16em;
     padding: 20px;
-    position: fixed;
     bottom: 0;
+    position: fixed;
     width: 100%;
 }
 
@@ -136,7 +136,13 @@ body {
     }
 }
 
-
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+}
 
 .main__heading {
   font-size: 36px;
@@ -144,25 +150,42 @@ body {
   font-weight: 800pt; 
   color: var(--primary);
   text-align: center;
+  
 }
 
-.row1 {
-    display: flex;
+.column1, .column3 {
+    width: 40%;
+    display: inline-block;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
 }
 
-.barbie-car {
-    padding: 20px;
-    margin-left: 100px;
-    margin-top: 20px;
+.column1, .column3 {
+    margin-right: 273px;
+}
+
+.column2, .column4 {
+    width: 40%;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.row2 {
+    flex-direction: row;
+}
+
+.barbie-car, .mojo-dojo {
     float: left;
+    display: block;
+    margin-left: 20px;
+    
 }
 
 .barbie-car, .barbie-real-world {
-    display: block;
+    margin-bottom: 3%;
+}
+
+.barbie-car, .mojo-dojo {
+    margin-right: 20px;
 }
 
 .existential_crisis, .real_world, .villain_arc, .women_rescue {
@@ -170,17 +193,128 @@ body {
     font-weight: 700pt;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
 }
 
 
-.paragraph_1, .paragraph_2, .paragraph_3, .paragraph4 {
+.paragraph_1, .paragraph_2, .paragraph_3, .paragraph_4 {
     color: var(--text);
     font-weight: 300px;
     font-size: 16px;
     font-family: 'Poppins', san-serif;
 }
 
+.paragraph_1, .paragraph_3 {
+    margin-left: 20px;
+    display: block;
+    padding: none;
+}
 
-.barbie-real-world {
+.paragraph_1, .paragraph_2, .paragraph_3, .paragraph_4 {
+    text-wrap: balance;
+}
+
+.paragraph_2, .paragraph_4 {
+    grid-area: barbietext2;
+    display: block;
+}
+
+
+
+.barbie-real-world, .barbie-rescue {
     float: left;
+    display: block;
+    content: "";
+    clear: both;
+    margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 1420px ) {
+
+
+.paragraph_1, .paragraph_2, .paragraph_3, .paragraph_4 {
+    overflow: hidden;
+}
+
+.existential_crisis, .real_world, .villain_arc, .women_rescue {
+    overflow: hidden;
+}
+
+}
+
+@media screen and (max-width: 1380px ) {
+    .column1, .column3 {
+        width: 36%;
+        display: inline-block;
+        flex-direction: row;
+    }
+
+    .column2, .column4 {
+        width: 36%;
+        display: inline-block;
+        flex-direction: row;
+    }
+
+    .paragraph_1, .paragraph_2, .paragraph_3, .paragraph_4 {
+        font-size: 13px;
+    }
+
+}
+
+
+@media screen and (max-width: 1185px ) {
+
+.main__heading {
+    font-size: 30px;
+}
+
+.existential_crisis, .real_world, .villain_arc, .women_rescue {
+    font-size: 20px;
+    padding: 10px 10px;
+    clear: both;
+}
+
+.column1, .column3 {
+    width: 35%;
+    clear: both;
+}
+
+.column1, .column3 {
+    margin-right: 225px;
+} 
+
+.column2, .column4 {
+    width: 35%;
+}
+.paragraph_2, .paragraph_4 {
+    text-align: left;
+}
+}
+
+@media screen and (max-width: 780px) {
+  .column1, .column3 {
+  margin-right: 175px;
+} 
+}
+
+@media screen and (max-width: 680px) {
+    .column1, .column2, .column3, .column4 {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .barbie-real-world, .barbie-rescue {
+        margin-left: 20px;
+    }
+
+    .paragraph_2, .paragraph_4 {
+        margin-left: 20px;
+    }
+
+    .footer {
+    position: relative;
+    }
 }
