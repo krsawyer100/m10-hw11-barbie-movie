@@ -31,6 +31,10 @@ body {
     margin: 0 100px;
 }
 
+.container__nav {
+    margin: 0 200px;
+}
+
 /* Header */
 .header {
     background-color: var(--primary);
@@ -45,18 +49,24 @@ body {
     margin-right: auto;
 }
 
+.header__nav_logo:hover {
+    scale: .97;
+    transition: all 0.5s;
+}
+
 .header__nav_link {
     color: var(--white);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.33em;
     text-decoration: none;
     padding: 10px;
 }
 
 .header__nav_link:hover, .header__nav_link:focus {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3em;
     text-decoration: underline solid 2px var(--white);
+    transition: all 0.5s;
 }
 
 /* Footer */
@@ -66,6 +76,7 @@ body {
     font-weight: 400;
     font-size: 1.16em;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .main {
@@ -83,7 +94,7 @@ body {
 /* Main */
 .main__h1 {
     color: var(--primary);
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
     text-align: left;
@@ -100,7 +111,7 @@ h2 {
 .main__p {
     color: var(--text);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1.5px solid var(--primary);
     padding-bottom: 20px;
@@ -136,14 +147,14 @@ h2 {
 
 .main__references_link:hover {
     color: var(--primary);
-    font-size: 1.15em;
+    font-size: 15px;
     transition: all 0.5s;
 }
 
 
 /* Media Queries*/
 @media screen and (max-width: 1020px) {
-    .container {
+    .container__nav {
         margin: 5px 20px 0;
     }
 
@@ -186,15 +197,20 @@ h2 {
         font-size: 1.083em;
         text-decoration: underline solid 2px var(--white);
     }
+
+    .headshot {
+        width: 45%;
+        height: auto;
+    }
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     .header__nav_logo > img {
         width: 75px;
         height: auto;
     }
-
+    
     .header__nav_links {
         padding: 10px 50px 0 50px;
         display: flex;
@@ -207,11 +223,11 @@ h2 {
     }
 
     .main__h1 {
-    color: var(--primary);
-    font-size: 24px;
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+        color: var(--primary);
+        font-size: 24px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
     }
 
     .main {
@@ -223,5 +239,10 @@ h2 {
         background-color: var(--white);
         padding: 2px;
         display: flex;
+    }
+
+    .headshot {
+        width: 70%;
+        height: auto;
     }
 }

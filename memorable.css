@@ -27,13 +27,8 @@ body {
     justify-content: center;
 }
 
-.container {
-    margin: 0 100px;
-}
-
-.container__main {
+.container__nav, .container__main {
     margin: 0 200px;
-
 }
 
 /* Header */
@@ -50,6 +45,11 @@ body {
     margin-right: auto;
 }
 
+.header__nav_logo:hover {
+    scale: .97;
+    transition: all 0.5s;
+}
+
 .header__nav_link {
     color: var(--white);
     font-weight: 500;
@@ -60,8 +60,9 @@ body {
 
 .header__nav_link:hover, .header__nav_link:focus {
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 1.3em;
     text-decoration: underline solid 2px var(--white);
+    transition: all 0.5s;
 }
 
 /* Footer */
@@ -71,11 +72,12 @@ body {
     font-weight: 400;
     font-size: 1.16em;
     padding: 20px;
+    margin-top: 10px;
 }
 
 /* Media Queries*/
 @media screen and (max-width: 1020px) {
-    .container {
+    .container__nav {
         margin: 5px 20px 0;
     }
 
@@ -118,9 +120,29 @@ body {
         font-size: 1.083em;
         text-decoration: underline solid 2px var(--white);
     }
+
+    h2 {
+        text-align: center;
+    }
+
+    .figure {
+        margin: 20px auto;
+    }
+
+    .figure__video {
+        width: 60%;
+    }
+
+    .caption {
+        width: 60%;
+    }
+
+    .container__main {
+        margin: 0 50px;
+    }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     .header__nav_logo > img {
         width: 75px;
         height: auto;
@@ -136,20 +158,62 @@ body {
         font-size: 1em;
         text-align: center;
     }
+
+    .figure {
+        margin: 10px auto;
+    }
+
+    .figure__video {
+        width: 50%;
+        height: 200px;
+    }
+
+    .caption {
+        width: 50%;
+    }
+
+    .container__main {
+        margin: 0 20px;
+    }
 }
 
 h1 {
     font-weight: 800;
     font-size: 24px;
-    color:#d6248c;
+    color: var(--primary);
     text-align: center;
-
+    margin-top: 40px;
 }
 
 h2 {
-
     font-weight: 700;
-    font-size: 22 px;
-    color:#0b7dae;
+    font-size: 22px;
+    color: var(--secondary);
 }
 
+p {
+    font-weight: 400;
+    font-size: 1.16em;
+}
+
+.caption {
+    font-weight: 300;
+    font-size: 1em;
+    color: var(--text-light);
+    margin-top: 3px;
+    padding: 3px 0;
+    width: 60%;
+}
+
+.section {
+    margin: 20px auto 40px;
+}
+
+.figure {
+    margin: 20px auto;
+}
+
+.figure__video {
+    width: 60%;
+    min-height: auto;
+}
