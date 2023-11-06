@@ -1,7 +1,8 @@
 # m10-hw11-barbie-movie
 
-Link to Live Site:
+Link to Live Site: https://krsawyer100.github.io/m10-hw11-barbie-movie/
 
+Link to Repository: https://github.com/krsawyer100/m10-hw11-barbie-movie.git
 
 Stylesheet: ![Stylesheet](https://github.com/krsawyer100/m10-hw11-barbie-movie/assets/143055650/408dc884-acd9-4797-88ad-d2909505592c)
 
